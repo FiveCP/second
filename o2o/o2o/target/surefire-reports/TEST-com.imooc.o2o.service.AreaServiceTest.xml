@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="com.imooc.o2o.service.AreaServiceTest" time="0.286" errors="1" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="9.0.1+11"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-9.0.1\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="E:\WU\o2o\o2o"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="E:\WU\o2o\o2o"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="9.0.1+11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\23182\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Users\23182\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf445311230470119140.tmp"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-9.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk-9.0.1/bin/server;C:/Program Files/Java/jdk-9.0.1/bin;C:;D:\grade\gradle-4.9-bin\gradle-4.9\bin;C:\Program Files\Java\jdk-9.0.1\bin;C:\Program Files\Java\jdk-9.0.1\jre\bin;\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;&quot;;C:\Program Files\Java\jdk-9.0.1\bin&quot;;C:\Program Files\Java\jdk-9.0.1\jre\bin&quot;;%QUARTUS_ROOTDIR%\bin&quot;;D:\QT5.9.1\5.9.1&quot;;C:\Program Files\Apache Software Foundation\Tomcat 8.5\bin&quot;;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;D:\grade\gradle-4.9-bin\gradle-4.9\bin;D:\Maven\apache-maven-3.5.0\bin;C:\WINDOWS\System32\OpenSSH\;D:\git\Git\cmd;D:\git\bin;C:\Users\23182\AppData\Local\Microsoft\WindowsApps;;D:\Java\eclipse;;."/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="53.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="D:\Maven\apache-maven-3.5.0\lib\jansi-native\windows64"/>
+    <property name="user.home" value="C:\Users\23182"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.specification.version" value="9"/>
+    <property name="user.name" value="23182"/>
+    <property name="java.class.path" value="D:\Maven\apache-maven-3.5.0\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="9"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -gs D:\Maven\apache-maven-3.5.0\conf\settings.xml -s D:\Maven\apache-maven-3.5.0\conf\settings.xml install"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-9.0.1"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="9.0.1"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\Maven\apache-maven-3.5.0"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.imooc.o2o.service.AreaServiceTest" name="queryAreaServiceTest" time="0.286">
+    <error message="添加区域信息失败:org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry &apos;楚苑&apos; for key &apos;UK_AREA&apos;
+### The error may involve com.imooc.o2o.dao.AreaDao.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO tb_area  ( area_id,area_name,area_desc,priority,create_time,last_edit_time ) VALUES( ?,?,?,?,?,? )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry &apos;楚苑&apos; for key &apos;UK_AREA&apos;
+; SQL []; Duplicate entry &apos;楚苑&apos; for key &apos;UK_AREA&apos;; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry &apos;楚苑&apos; for key &apos;UK_AREA&apos;" type="java.lang.RuntimeException">java.lang.RuntimeException: 添加区域信息失败:org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry &apos;楚苑&apos; for key &apos;UK_AREA&apos;
+### The error may involve com.imooc.o2o.dao.AreaDao.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO tb_area  ( area_id,area_name,area_desc,priority,create_time,last_edit_time ) VALUES( ?,?,?,?,?,? )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry &apos;楚苑&apos; for key &apos;UK_AREA&apos;
+; SQL []; Duplicate entry &apos;楚苑&apos; for key &apos;UK_AREA&apos;; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry &apos;楚苑&apos; for key &apos;UK_AREA&apos;
+	at com.imooc.o2o.service.impl.AreaServiceImpl.addArea(AreaServiceImpl.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy37.addArea(Unknown Source)
+	at com.imooc.o2o.service.AreaServiceTest.queryAreaServiceTest(AreaServiceTest.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@310ed6b4] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@630bf683] will not be managed by Spring
+==&gt;  Preparing: SELECT area_id, area_name, area_desc, priority, create_time, last_edit_time FROM tb_area ORDER BY priority DESC 
+==&gt; Parameters: 
+&lt;==    Columns: area_id, area_name, area_desc, priority, create_time, last_edit_time
+&lt;==        Row: 8, 楚苑, 楚苑, 16, 2018-09-22 20:58:50.0, 2018-09-22 20:58:50.0
+&lt;==        Row: 3, 东苑, 东苑, 12, 2017-06-04 19:12:58.0, 2017-06-04 19:12:58.0
+&lt;==        Row: 4, 南苑, 南苑, 10, 2017-06-04 19:13:09.0, 2017-06-04 19:13:09.0
+&lt;==        Row: 5, 西苑, 西苑, 9, 2017-06-04 19:13:18.0, 2017-06-04 19:13:18.0
+&lt;==        Row: 7, 中苑, 中苑, 8, 2018-09-18 13:00:35.0, 2018-09-18 13:00:35.0
+&lt;==        Row: 6, 北苑, 北苑, 7, 2017-06-04 19:13:29.0, 2017-06-04 19:13:29.0
+&lt;==      Total: 6
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@310ed6b4]
+Creating a new SqlSession
+Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cd26422]
+JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@57e388c3] will be managed by Spring
+==&gt;  Preparing: INSERT INTO tb_area ( area_id,area_name,area_desc,priority,create_time,last_edit_time ) VALUES( ?,?,?,?,?,? ) 
+==&gt; Parameters: null, 楚苑(String), 楚苑(String), 16(Integer), 2018-09-29 18:50:57.036(Timestamp), 2018-09-29 18:50:57.036(Timestamp)
+Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cd26422]
+Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cd26422]
+Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cd26422]
+</system-out>
+    <system-err>9月 29, 2018 6:50:56 下午 org.springframework.test.context.web.WebTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+信息: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+9月 29, 2018 6:50:56 下午 org.springframework.test.context.web.WebTestContextBootstrapper getTestExecutionListeners
+信息: Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@9f674ac, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1da4b3f9, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@23cbbd07, org.springframework.test.context.support.DirtiesContextTestExecutionListener@448b808a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7e62cfa3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@46e190ed]
+9月 29, 2018 6:50:57 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+信息: Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+9月 29, 2018 6:50:57 下午 org.springframework.jdbc.support.SQLErrorCodesFactory &lt;init&gt;
+信息: SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+</system-err>
+  </testcase>
+</testsuite>
